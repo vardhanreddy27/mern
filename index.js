@@ -29,6 +29,6 @@ app.post('/read',async(req,res)=>{
         }res.send(result)
     });
     });
-app.listen(3001,()=>{
+app.listen(process.env.PORT || 5000,()=>{
     console.log('server running port 3001');
 });
